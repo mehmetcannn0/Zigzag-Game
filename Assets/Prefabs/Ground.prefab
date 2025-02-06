@@ -135,7 +135,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2046868093264263288
 MonoBehaviour:
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundDataTransmitter: {fileID: 2046868093264263288}
+  gameManager: {fileID: 0}
 --- !u!114 &830924470534710585
 MonoBehaviour:
   m_ObjectHideFlags: 0

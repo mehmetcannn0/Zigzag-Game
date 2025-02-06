@@ -5,13 +5,18 @@ using UnityEngine;
 public class BallMovementController : MonoBehaviour
 {
     [SerializeField] private BallDataTransmitter ballDataTransmitter;
+    [SerializeField] private GameManager gameManager;
 
-    [SerializeField] private float ballSpeed;
+    public float ballSpeed;
      
 
     void Update()
     {
         SetBallMovement();
+        if (ballDataTransmitter.GetBallYValue()<-1)
+        {
+            gameManager.GameOver();
+        }
 
     }
 
